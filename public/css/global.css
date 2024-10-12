@@ -1,0 +1,8 @@
+body {
+  font-family: "Tomorrow", sans-serif;
+}
+
+:root {
+  --primary-color: #555761;
+  --secondary-color: #3e3e41;
+}

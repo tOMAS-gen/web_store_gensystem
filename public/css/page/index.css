@@ -1,0 +1,149 @@
+.center {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+}
+
+.facts-widget-content {
+  white-space: nowrap;
+  /* Mantiene los elementos en una fila */
+  overflow-x: auto;
+  /* Habilita el desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch;
+  /* Habilita el desplazamiento suave en dispositivos táctiles */
+}
+
+.facts-widget-content::-webkit-scrollbar {
+  display: none;
+  /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
+}
+
+.row-cols-auto {
+  display: inline-flex;
+  /* Mantiene los elementos en fila sin que se apilen verticalmente */
+  flex-wrap: nowrap;
+  /* Evita que los elementos pasen a una nueva fila */
+}
+
+@media (max-width: 768px) {
+  .facts-widget-content {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Activar desplazamiento táctil suave */
+  }
+
+  .row-cols-auto {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+}
+
+#cables-unipolares {
+  width: 200px;
+  background-color: #4c66c2;
+}
+
+#gabinete {
+  width: 300px;
+  background-color: #95a9eb;
+}
+
+#mas {
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--secondary-color);
+}
+
+#disyuntor-diferencial {
+  width: 250px;
+  background-color: #637ddb;
+}
+
+#tapas-interruptores {
+  width: 350px;
+  background-color: #4358a0;
+}
+
+.responsive-image {
+  width: 100%;
+  /* La imagen se ajusta al 100% del ancho del contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  max-width: 100%;
+  /* Asegura que no exceda el tamaño original de la imagen */
+}
+
+.element {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  /* Ancho del círculo */
+  height: 12px;
+  /* Altura del círculo */
+  border-radius: 50%;
+  /* Hace que el botón sea circular */
+  background-color: grey;
+  /* Color de fondo del botón */
+  border: none;
+  /* Elimina el borde del botón */
+  margin: 0 5px;
+  /* Espacio entre los botones */
+}
+
+.carousel-indicators .active {
+  background-color: rgb(209, 11, 11);
+  /* Color del botón activo */
+  opacity: 1;
+  /* Botón activo completamente opaco */
+}
+
+.expanded {
+  height: 100%;
+}
+
+.img-full-height {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-1{
+  height: var(--item-height);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/index/iluminacion.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay-content {
+  position: absolute; /* Para superponer sobre el div padre */
+  top: 10%;           /* Ajusta para centrar verticalmente */
+  left: 50%;          /* Ajusta para centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el contenido en relación a su tamaño */
+  width: 90%;        /* Ajusta para que el contenedor abarque el ancho del padre */
+  color: white;       /* Color del texto */
+}
+
+#location {
+  background-color: var(--secondary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#location .container {
+  padding-bottom: 0;
+}
