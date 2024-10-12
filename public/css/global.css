@@ -6,3 +6,7 @@ body {
   --primary-color: #555761;
   --secondary-color: #3e3e41;
 }
+
+.form-control {
+  border-radius: 0%;
+}
